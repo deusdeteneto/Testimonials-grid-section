@@ -11,9 +11,13 @@ footer {
 .attribution {
   font-size: 0.7rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.75rem;
 }
 .attribution a {
+  color: hsl(217, 19%, 35%);
   transition: color 0.3s;
+}
+.attribution a:hover {
+  color: hsl(263, 55%, 52%);
 }/*# sourceMappingURL=style.css.map */
