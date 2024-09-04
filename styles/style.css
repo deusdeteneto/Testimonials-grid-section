@@ -1,4 +1,122 @@
 @import url("reset.css");
+.background-page {
+  background-color: hsl(210, 46%, 95%);
+}
+
+.grid-main {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: rgba(72, 85, 106, 0.7);
+}
+.grid-main .card {
+  height: 100%;
+}
+.grid-main #card-daniel {
+  background-color: hsl(263, 55%, 52%);
+  border: none;
+}
+.grid-main #card-daniel .img-profile {
+  width: 35px;
+  border: 2px solid hsl(210, 46%, 95%);
+}
+.grid-main #card-daniel .username {
+  font-size: 0.9375rem;
+  color: hsl(0, 0%, 81%);
+  font-weight: 600;
+}
+.grid-main #card-daniel .card-text,
+.grid-main #card-daniel .text-verified {
+  font-size: 0.8125rem;
+  color: rgba(207, 207, 207, 0.7);
+  font-weight: 500;
+}
+.grid-main #card-daniel .card-title {
+  font-size: 1.25rem;
+  color: hsl(210, 46%, 95%);
+  font-weight: 500;
+  text-wrap: wrap;
+}
+.grid-main #card-jonathan {
+  background-color: hsl(217, 19%, 35%);
+  border: none;
+}
+.grid-main #card-jonathan .img-profile {
+  width: 35px;
+  border: 2px solid hsl(210, 46%, 95%);
+}
+.grid-main #card-jonathan .username {
+  font-size: 0.9375rem;
+  color: hsl(0, 0%, 81%);
+  font-weight: 600;
+}
+.grid-main #card-jonathan .card-text,
+.grid-main #card-jonathan .text-verified {
+  font-size: 0.8125rem;
+  color: rgba(207, 207, 207, 0.7);
+  font-weight: 500;
+}
+.grid-main #card-jonathan .card-title {
+  font-size: 1.25rem;
+  color: hsl(210, 46%, 95%);
+  font-weight: 500;
+  text-wrap: wrap;
+}
+.grid-main #card-jeanette,
+.grid-main #card-kira {
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+}
+.grid-main #card-jeanette .img-profile,
+.grid-main #card-kira .img-profile {
+  width: 35px;
+  border: 2px solid hsl(0, 0%, 81%);
+}
+.grid-main #card-jeanette .username,
+.grid-main #card-kira .username {
+  font-size: 0.9375rem;
+  color: hsl(217, 19%, 35%);
+  font-weight: 600;
+}
+.grid-main #card-jeanette .card-text,
+.grid-main #card-jeanette .text-verified,
+.grid-main #card-kira .card-text,
+.grid-main #card-kira .text-verified {
+  font-size: 0.8125rem;
+  color: rgba(72, 85, 106, 0.7);
+  font-weight: 500;
+}
+.grid-main #card-jeanette .card-title,
+.grid-main #card-kira .card-title {
+  font-size: 1.25rem;
+  color: hsl(217, 19%, 35%);
+  font-weight: 500;
+  text-wrap: wrap;
+}
+.grid-main #card-patrick {
+  background-color: hsl(219, 29%, 14%);
+  border: none;
+}
+.grid-main #card-patrick .img-profile {
+  width: 35px;
+  border: 2px solid hsl(263, 55%, 52%);
+}
+.grid-main #card-patrick .username {
+  font-size: 0.9375rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+.grid-main #card-patrick .card-text,
+.grid-main #card-patrick .text-verified {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+.grid-main #card-patrick .card-title {
+  font-size: 1.25rem;
+  color: hsl(210, 46%, 95%);
+  font-weight: 500;
+  text-wrap: wrap;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -7,17 +125,14 @@ footer {
   justify-content: center;
   padding: 1rem 0;
 }
-
-.attribution {
-  font-size: 0.7rem;
-  text-align: center;
-  font-weight: 600;
+footer .attribution {
   font-size: 0.75rem;
+  font-weight: 600;
 }
-.attribution a {
+footer .attribution a {
   color: hsl(217, 19%, 35%);
   transition: color 0.3s;
 }
-.attribution a:hover {
+footer .attribution a:hover {
   color: hsl(263, 55%, 52%);
 }/*# sourceMappingURL=style.css.map */
