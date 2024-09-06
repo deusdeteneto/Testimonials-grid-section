@@ -17,10 +17,10 @@ $review-paragraph-color: rgba($very-dark-grayish-blue, 0.7); // 70% opacity
 $font-barlow: "Barlow Semi Condensed", sans-serif;
 $font-weight-regular: 500;
 $font-weight-semibold: 600;
-$font-size-body: 0.80rem; 
-$font-size-small: 1.4rem;
+$font-size-body: 0.75rem;
+$font-size-small: 1.18rem;
 $font-size-medium: 0.9375rem;
-$font-size-large: 0.75rem; 
+$font-size-large: 0.75rem;
 
 // Mixins
 @mixin img-profile($width, $color) {
@@ -37,6 +37,7 @@ $font-size-large: 0.75rem;
   font-size: $size;
   color: $color;
   font-weight: $weight;
+  word-wrap: break-word; // Ajustado para melhor compatibilidade
   text-wrap: wrap;
 }
 
@@ -48,14 +49,21 @@ $font-size-large: 0.75rem;
 
 // Background
 .background-page {
+  font-family: "Barlow Semi Condensed", sans-serif;
   background-color: $light-grayish-blue;
+  height: 100vh; // 100% do viewport height
+  display: flex;
+  justify-content: center; // Centraliza horizontalmente
+  align-items: center; // Centraliza verticalmente
 }
 
 // Grid
 .grid-main {
   font-family: $font-barlow;
   color: $review-paragraph-color;
-  
+  justify-content: center;
+  align-items: center;
+
   .card {
     min-height: 100%;
   }
@@ -183,6 +191,31 @@ $font-size-large: 0.75rem;
   }
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100%; // Faz com que a section ocupe toda a altura do container pai
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; // Faz com que o container ocupe todo o espaço disponível dentro da section
+  }
+
+  // Faz com que o card ocupe toda a altura disponível
+  #card-kira {
+    height: 100%; // Faz com que o card ocupe toda a altura disponível do container
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Garante que o conteúdo do card seja distribuído verticalmente
+  }
+
+  .row {
+    height: 100%; // Faz com que o card ocupe toda a altura disponível do container
+    display: flex;
+  }
+}
+
 // Footer
 footer {
   position: absolute;
@@ -204,5 +237,48 @@ footer {
         color: $moderate-violet;
       }
     }
+  }
+}
+
+// Responsive design for small screens
+@media (max-width: 576px) {
+  .img-profile {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+}
+
+// Custom styling for the main container on large screens
+
+@media (max-width: 992px) {
+  // Ensures cards take 80% width on mobile
+  background-page {
+    min-height: 180vh;
+
+    .grid-main {
+      width: 80%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    height: auto; // Faz com que a section ocupe toda a altura do container pai
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto; // Faz com que o container ocupe todo o espaço disponível dentro da section
   }
 }

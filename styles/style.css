@@ -1,11 +1,18 @@
 @import url("reset.css");
 .background-page {
+  font-family: "Barlow Semi Condensed", sans-serif;
   background-color: hsl(210, 46%, 95%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-main {
   font-family: "Barlow Semi Condensed", sans-serif;
   color: rgba(72, 85, 106, 0.7);
+  justify-content: center;
+  align-items: center;
 }
 .grid-main .card {
   min-height: 100%;
@@ -25,14 +32,15 @@
 }
 .grid-main #card-daniel .card-text,
 .grid-main #card-daniel .text-verified {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: rgba(207, 207, 207, 0.7);
   font-weight: 500;
 }
 .grid-main #card-daniel .card-title {
-  font-size: 1.4rem;
+  font-size: 1.18rem;
   color: hsl(210, 46%, 95%);
   font-weight: 500;
+  word-wrap: break-word;
   text-wrap: wrap;
 }
 .grid-main #card-jonathan {
@@ -50,14 +58,15 @@
 }
 .grid-main #card-jonathan .card-text,
 .grid-main #card-jonathan .text-verified {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: rgba(207, 207, 207, 0.7);
   font-weight: 500;
 }
 .grid-main #card-jonathan .card-title {
-  font-size: 1.4rem;
+  font-size: 1.18rem;
   color: hsl(210, 46%, 95%);
   font-weight: 500;
+  word-wrap: break-word;
   text-wrap: wrap;
 }
 .grid-main #card-jeanette,
@@ -80,15 +89,16 @@
 .grid-main #card-jeanette .text-verified,
 .grid-main #card-kira .card-text,
 .grid-main #card-kira .text-verified {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: rgba(72, 85, 106, 0.7);
   font-weight: 500;
 }
 .grid-main #card-jeanette .card-title,
 .grid-main #card-kira .card-title {
-  font-size: 1.4rem;
+  font-size: 1.18rem;
   color: hsl(217, 19%, 35%);
   font-weight: 500;
+  word-wrap: break-word;
   text-wrap: wrap;
 }
 .grid-main #card-patrick {
@@ -106,15 +116,37 @@
 }
 .grid-main #card-patrick .card-text,
 .grid-main #card-patrick .text-verified {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 500;
 }
 .grid-main #card-patrick .card-title {
-  font-size: 1.4rem;
+  font-size: 1.18rem;
   color: hsl(210, 46%, 95%);
   font-weight: 500;
+  word-wrap: break-word;
   text-wrap: wrap;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+section .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+section #card-kira {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section .row {
+  height: 100%;
+  display: flex;
 }
 
 footer {
@@ -135,4 +167,37 @@ footer .attribution a {
 }
 footer .attribution a:hover {
   color: hsl(263, 55%, 52%);
+}
+
+@media (max-width: 576px) {
+  .img-profile {
+    width: 50px;
+    height: 50px;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 992px) {
+  background-page {
+    min-height: 180vh;
+  }
+  background-page .grid-main {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
