@@ -63,6 +63,7 @@ $font-size-large: 0.75rem;
   color: $review-paragraph-color;
   justify-content: center;
   align-items: center;
+  
 
   .card {
     min-height: 100%;
@@ -194,36 +195,34 @@ $font-size-large: 0.75rem;
 section {
   display: flex;
   flex-direction: column;
-  height: 100%; // Faz com que a section ocupe toda a altura do container pai
+  height: 100%;
 
   .container {
     display: flex;
     flex-direction: column;
-    height: 100%; // Faz com que o container ocupe todo o espaço disponível dentro da section
+    height: 100%;
   }
 
-  // Faz com que o card ocupe toda a altura disponível
   #card-kira {
-    height: 100%; // Faz com que o card ocupe toda a altura disponível do container
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // Garante que o conteúdo do card seja distribuído verticalmente
+    justify-content: space-between;
   }
 
   .row {
-    height: 100%; // Faz com que o card ocupe toda a altura disponível do container
+    height: 100%;
     display: flex;
   }
 }
 
 // Footer
 footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
-  justify-content: center;
+  justify-content: end;
   padding: 1rem 0;
+  
 
   .attribution {
     font-size: $font-size-large;
@@ -242,38 +241,23 @@ footer {
 
 // Responsive design for small screens
 @media (max-width: 576px) {
-  .img-profile {
-    width: 50px;
-    height: 50px;
+  .background-page {
+    height: 100%;
   }
+  
+}
 
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .card-text {
-    font-size: 0.85rem;
+// Media query para tamanho Medium (md)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .custom-section {
+    margin-bottom: 1rem; // 4 * 0.25rem (Bootstrap spacing scale)
+    padding-right: 0;
   }
 }
 
-// Custom styling for the main container on large screens
-
 @media (max-width: 992px) {
-  // Ensures cards take 80% width on mobile
-  background-page {
-    min-height: 180vh;
-
-    .grid-main {
-      width: 80%;
-      padding: 0;
-      margin: 0;
-    }
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    height: auto; // Faz com que a section ocupe toda a altura do container pai
+  .background-page {
+    height: 100%;
   }
 
   .container {
@@ -282,3 +266,11 @@ footer {
     height: auto; // Faz com que o container ocupe todo o espaço disponível dentro da section
   }
 }
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px; // Define o tamanho máximo do container igual ao de telas com largura máxima de 992px
+    margin: 0 auto; // Centraliza o container
+  }
+}
+
