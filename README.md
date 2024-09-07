@@ -21,7 +21,7 @@ Sinta-se à vontade para visitar meu perfil no Frontend Mentor - [@deusdeteneto]
 ### Imagem
 
 
-![Imagem do Projeto](https://raw.githubusercontent.com/deusdeteneto/customer-registration-form/main/design/image-desktop.jpeg) 
+![Imagem do Projeto](https://raw.githubusercontent.com/deusdeteneto/Testimonials-grid-section/main/design/desktop-design.jpeg) 
 
 ### Links
 
